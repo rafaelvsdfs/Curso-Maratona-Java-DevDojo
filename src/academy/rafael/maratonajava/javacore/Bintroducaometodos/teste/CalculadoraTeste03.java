@@ -7,6 +7,9 @@ public class CalculadoraTeste03 {
         Calculadora calculadora = new Calculadora();
         int result = (int) calculadora.divideDoisNumeros(20, 2);
         System.out.println(result);
+        System.out.println("-------------------------");
         System.out.println(calculadora.divideDoisNumeros(20, 2));
+        System.out.println("-------------------------");
+        calculadora.imprimeDoisNumeros(10,2);
     }
 }
