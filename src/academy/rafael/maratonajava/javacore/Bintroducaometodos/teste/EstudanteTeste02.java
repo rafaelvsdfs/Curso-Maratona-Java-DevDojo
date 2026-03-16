@@ -1,13 +1,13 @@
 package academy.rafael.maratonajava.javacore.Bintroducaometodos.teste;
 
 import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.Estudante;
-import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante01;
+import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante02;
 
-public class EstudanteTeste01 {
+public class EstudanteTeste02 {
     public static void main(String[] args) {
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
-        ImpressoraEstudante01 impressora = new ImpressoraEstudante01();
+        ImpressoraEstudante02 impressora = new ImpressoraEstudante02();
 
         estudante01.nome = "Mestre din";
         estudante01.idade = 16;
@@ -20,5 +20,9 @@ public class EstudanteTeste01 {
         impressora.imprime(estudante01);
         impressora.imprime(estudante02);
 
+        System.out.println("#####################");
+
+        impressora.imprime(estudante01);
+        impressora.imprime(estudante02);
     }
 }
