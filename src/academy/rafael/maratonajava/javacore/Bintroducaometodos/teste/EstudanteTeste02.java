@@ -1,12 +1,12 @@
 package academy.rafael.maratonajava.javacore.Bintroducaometodos.teste;
 
-import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.Estudante;
+import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.Estudante01;
 import academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante02;
 
 public class EstudanteTeste02 {
     public static void main(String[] args) {
-        Estudante estudante01 = new Estudante();
-        Estudante estudante02 = new Estudante();
+        Estudante01 estudante01 = new Estudante01();
+        Estudante01 estudante02 = new Estudante01();
         ImpressoraEstudante02 impressora = new ImpressoraEstudante02();
 
         estudante01.nome = "Mestre din";
