@@ -1,6 +1,6 @@
 package academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio;
 
-public class Calculadora {
+public class Calculadora02 {
     public void somaDoisNumeros() {
         System.out.println(10 + 10);
     }
@@ -30,10 +30,26 @@ public class Calculadora {
     }
 
     public void alteraDoisNumeros(int numero01, int numero02) {
-        numero01= 99;
+        numero01 = 99;
         numero02 = 22;
         System.out.println("Dentro do alteraDoisNumeros");
         System.out.println("Num01: " + numero01);
         System.out.println("Num02: " + numero02);
+    }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for (int i : numeros) {
+            soma += i;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarargs(int ... numeros){
+        int soma = 0;
+        for (int i : numeros) {
+            soma += i;
+        }
+        System.out.println(soma);
     }
 }
