@@ -1,7 +1,7 @@
 package academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class ImpressoraEstudante02 {
-    public void imprime(Estudante estudante ){
+    public void imprime(Estudante01 estudante ){
         System.out.println("------------------------");
         System.out.println(estudante.nome);
         System.out.println(estudante.idade);
