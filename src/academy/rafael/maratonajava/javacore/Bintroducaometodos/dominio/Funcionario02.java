@@ -1,9 +1,9 @@
 package academy.rafael.maratonajava.javacore.Bintroducaometodos.dominio;
 
-public class Funcionario01 {
-    public String nome;
-    public int idade;
-    public int[] salario;
+public class Funcionario02 {
+    private String nome;
+    private int idade;
+    private int[] salario;
 
     public void imprimiDadosFuncionario() {
         System.out.println("Nome: " + this.nome);
@@ -11,7 +11,7 @@ public class Funcionario01 {
         if (salario != null) {
             int contador = 0;
             for (int i : salario) {
-                contador ++;
+                contador += 1;
                 System.out.println("salario " + contador + " " + i);
             }
         } else {
@@ -21,15 +21,39 @@ public class Funcionario01 {
     }
 
     public void imprimiMediaSalarios() {
-       if (salario == null) {
-           return;
-       }
+        if (salario == null) {
+            return;
+        }
         int somaSalarioTotal = 0;
         int somaQuantidade = 0;
         for (int i = 0; i < salario.length; i++) {
             somaSalarioTotal += salario[i];
-            somaQuantidade += i;
+            somaQuantidade ++;
         }
         System.out.println("A media de salario é " + somaSalarioTotal / somaQuantidade);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int[] getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int[] salario) {
+        this.salario = salario;
     }
 }
