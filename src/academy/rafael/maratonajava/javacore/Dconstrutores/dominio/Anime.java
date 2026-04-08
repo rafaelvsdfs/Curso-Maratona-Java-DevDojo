@@ -1,4 +1,4 @@
-package academy.rafael.maratonajava.javacore.Csobrecargametodos.dominio;
+package academy.rafael.maratonajava.javacore.Dconstrutores.dominio;
 
 public class Anime {
     private String nome;
@@ -7,8 +7,13 @@ public class Anime {
     private int episodios;
     private int faxetoria;
 
-    public Anime () {
+    public Anime( String nome) {
+        this.nome = nome;
+    }
 
+    public Anime( String nome, String tipo) {
+        this.nome = nome;
+        this.tipo = tipo;
     }
 
     public void init(String nome, String tipo, int ano, int episodios) {
